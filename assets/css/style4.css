@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .7s;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+}
+
+@font-face {
+    font-family: 'unbounded';
+    src: url(../font/Unbounded-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'unboundedBlack';
+    src: url(../font/Unbounded-Black.ttf);
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.container__2 {
+    max-width: 3000px;
+    margin: 0 auto;
+}
+
+.py-100 {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+::-webkit-scrollbar{
+    width: 0px;
+}
+
+.py-100 {
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+a{
+    color: bisque;
+    font-family: 'unbounded';
+    font-size: 18px;
+}
+
+
+p, h2, h3, h1, button{
+    font-family: 'unbounded';
+}
+
+.modal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.delete{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #283618;
+    color: #FEFAE0;
+    text-align: center;
+    align-items: center;
+    font-size: 19px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.delete:hover{
+    opacity: 0.7;
+}
+
+.modal__window{
+    width: 1000px;
+    height: 1350px;
+    border: 3px #222222 solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 10px 15px #00000080;
+}
+
+.img__korzina{
+    margin-left: -620px;
+    margin-top: 21px;
+    width: 250px;
+}
+
+.inf__korzina{
+    display: flex;
+    flex-direction: column;
+    margin-top: -405px;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 300px;
+    gap: 30px;
+    font-family: 'unbounded';
+}
+
+.korzin{
+    margin-left: -750px;
+    margin-top: 60px;
+    margin-bottom: 50px;
+}
+
+hr{
+    width: 932px;
+    height: 5px;
+    color: #283618;
+    background-color: #283618;
+}
+
+.inf{
+    position: relative;
+    width: 922px;
+    height: 450px;
+    background-color: #FEFAE0;
+    margin-top: 35px;
+    margin-bottom: 500px;
+}
+
+.footer__inf{
+    display: flex;
+    flex-direction: row;
+    gap: 400px;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.footer__btn{
+    width: 260px;
+    height: 95px;
+    background-color: #283618;
+    color: #FEFAE0;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.footer__btn:hover{
+    transform: scale(1.1);
+    background-color: transparent;
+    border: 4px solid #283618;
+    color: #283618;
+
+}
+
+@media screen and (max-width: 440px) {
+    .container {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .py-100 {
+        padding: 30px 0;
+    }
+    
+    .modal{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .delete{
+        width: 45px;
+        height: 45px;
+        border-radius: 100%;
+        background-color: #283618;
+        color: #FEFAE0;
+        text-align: center;
+        align-items: center;
+        font-size: 19px;
+        position: absolute;
+        top: -18px;
+        right: -10px;
+    }
+    
+    .delete:hover{
+        opacity: 0.7;
+    }
+    
+    .modal__window{
+        width: 400px;
+        height: 1030px;
+        border: 3px #222222 solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        box-shadow: 0 10px 15px #00000080;
+    }
+    
+    .img__korzina{
+        margin-left: -195px;
+        margin-top: 21px;
+        width: 115px;
+    }
+    
+    .inf__korzina{
+        display: flex;
+        flex-direction: column;
+        margin-top: -166px;
+        font-size: 16px;
+        text-align: left;
+        margin-left: 149px;
+        gap: 30px;
+        font-family: 'unbounded';
+    }
+    
+    .korzin{
+        margin-left: -230px;
+        margin-top: 12px;
+        margin-bottom: 24px;
+    }
+    
+    hr{
+        width: 380px;
+        height: 5px;
+        color: #283618;
+        background-color: #283618;
+    }
+    
+    .inf{
+        position: relative;
+        width: 352px;
+        height: 307px;
+        background-color: #FEFAE0;
+        margin-top: 35px;
+        margin-bottom: 500px;
+    }
+    
+    .footer__inf{
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .footer__btn{
+        width: 130px;
+        height: 43px;
+        background-color: #283618;
+        color: #FEFAE0;
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    
+    .footer__btn:hover{
+        transform: scale(1.1);
+        background-color: transparent;
+        border: 4px solid #283618;
+        color: #283618;
+    
+    }
+}
